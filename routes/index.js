@@ -7,6 +7,7 @@ console.log('The router is not fucked.');
 
 router.get('/', homeController.home);
 router.use('/users', require('./users'));
+router.use('/posts', require('./posts'));
 
 // from any further routes access comes from here
 // router.use('/routerName', require('./routerfile'))
