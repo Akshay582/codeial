@@ -1,0 +1,67 @@
+h1, ::placeholder, input[type="submit"], #home-container #friends {
+  font-family: "Merriweather"; }
+
+#feed-posts {
+  font-family: "Roboto Mono";
+  padding-right: 5%; }
+
+::placeholder {
+  color: dimgray; }
+
+input[type="submit"] {
+  text-shadow: 0 0 2px #FEFAF1;
+  letter-spacing: 0.05rem;
+  border-width: 0;
+  background-color: #333D79FF;
+  color: #FEFAF1;
+  padding: 1% 2%;
+  border-radius: 5px; }
+
+input[type="text"], input[type="email"] {
+  border-width: 0;
+  background-color: #FEFAF1;
+  padding: 1% 2%;
+  width: 71%;
+  border-radius: 5px; }
+
+textarea {
+  width: 86%;
+  border-radius: 5px; }
+
+.total-post {
+  padding: 1% 0;
+  padding-right: 1%;
+  background-color: white;
+  border-radius: 10px; }
+
+.posts-list {
+  list-style-type: none;
+  font-size: 1.1rem; }
+  .posts-list a {
+    float: right;
+    text-decoration: none;
+    color: black; }
+
+#posts-list-container ul {
+  padding: 0; }
+  #posts-list-container ul .comments {
+    font-family: "Source Sans Pro";
+    padding-left: 3%; }
+    #posts-list-container ul .comments p {
+      margin-top: 0;
+      border-radius: 5px;
+      background-color: white; }
+
+small {
+  font-family: "Ubuntu";
+  font-weight: bold; }
+
+#home-container {
+  display: flex;
+  flex-direction: row; }
+  #home-container #friends {
+    border-left: 1px solid lightgray;
+    width: 50%;
+    padding-left: 5%; }
+    #home-container #friends a {
+      text-decoration: none; }

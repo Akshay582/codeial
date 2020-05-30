@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  flex-direction: row;
+  font-family: "Merriweather";
+  background-color: #333D79FF;
+  color: #FAEBEFFF;
+  padding: 0 5%; }
+
+#header-website-name {
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  margin: 0.5% 65% 0% 0.5%;
+  display: inline-block;
+  text-shadow: 0 0 3px #FAEBEFFF; }
+
+.header-user-icon {
+  transform: translateY(20%); }
+
+#header-list {
+  display: inline-block;
+  padding: 0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 2px #FAEBEFFF; }
+  #header-list li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 1em;
+    margin-left: 0.3em; }
+    #header-list li a {
+      color: #FAEBEFFF;
+      font-size: 1.1rem;
+      text-decoration: none; }

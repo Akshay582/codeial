@@ -10,6 +10,7 @@ const MongoStore = require('connect-mongo')(session);
 const mongoose = require('mongoose');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-stratergy');
+// const passportJWT = require('./config/passport-jwt-stratergy');
 const sassMiddleware = require('node-sass-middleware');
 
 app.use(sassMiddleware({

@@ -1,9 +1,10 @@
+// basic body margin change
 body{
     margin: 0;
-    // text-align: center;
-
+    background-color: whitesmoke;
     #layout-main{
         min-height: 100%;
+        margin: 0 10% 0 30%;
     }
-
 }
+

@@ -1,0 +1,15 @@
+<p>
+    <i class="far fa-comment"></i>
+    <!-- <i class="far fa-comment-alt"></i> -->
+    <!-- <i class="fas fa-comment-alt"></i> -->
+    <%= comment.content %>
+    <% if(locals.user && locals.user.id == comment.user.id) {%>
+        <a href="/comments/destroy/<%= comment.id %>">
+            Delete
+        </a>
+    <% } %> 
+    <br>
+    <small>
+        <%= comment.user.name %>
+    </small>
+</p>

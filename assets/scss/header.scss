@@ -1,0 +1,47 @@
+$pop_color: #FAEBEFFF;
+$base_color: #333D79FF;
+$merri_weather_font:'Merriweather';
+
+// give header its basic style
+header{
+    display: flex;
+    flex-direction: row;
+    font-family: $merri_weather_font;
+    background-color: $base_color;
+    color: $pop_color;
+    padding: 0 5%;
+}
+
+// a little style on the website name
+#header-website-name{
+    // font
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    // dimensions
+    margin: 0.5% 65% 0% 0.5%;
+    display: inline-block;
+    text-shadow: 0 0 3px $pop_color;
+}
+
+.header-user-icon{
+        transform: translateY(20%);
+}
+
+#header-list{
+    display: inline-block;
+    padding: 0;
+    // fonts
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px $pop_color;
+    li{
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 1em;
+        margin-left: 0.3em;
+        a{
+            color: $pop_color;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+    }
+}

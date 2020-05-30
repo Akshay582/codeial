@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 
 const postSchema = new mongoose.Schema({
+    /*
+    *   1. Content
+    *   2. User
+    *   3. Comments
+    */
     content: {
         type: String,
         required: true

@@ -1,0 +1,106 @@
+$merri_weather_font:'Merriweather';
+$roboto_mono_font: 'Roboto Mono',;
+$ubuntu_font: 'Ubuntu', ;
+$source_sans_font:  'Source Sans Pro', ;
+
+// $pop_color: #FAEBEFFF;
+$pop_color: #FEFAF1;
+$base_color: #333D79FF;
+
+h1{
+    font-family: $merri_weather_font;
+}
+
+#feed-posts{
+    font-family: $roboto_mono_font;
+    padding-right: 5%;
+}
+
+// style for placeholder
+::placeholder{
+    @extend h1;
+    color: dimgray;
+}
+
+// style for buttons
+input{
+    &[type="submit"]{
+        @extend h1;
+        // add glowing effect to the buttons
+        text-shadow: 0 0 2px $pop_color;
+        letter-spacing: 0.05rem;
+        // changing style of the buttons
+        border-width: 0;
+        background-color: $base_color;
+        color: $pop_color;
+        // dimensions
+        padding: 1% 2%;
+        border-radius: 5px;
+    }
+    &[type="text"], &[type="email"]{
+        // seemless style
+        border-width: 0;
+        background-color: $pop_color;
+        // dimensions
+        padding: 1% 2%;
+        width: 71%;
+        border-radius: 5px;
+    }
+}
+
+textarea{
+    width: 86%;
+    border-radius: 5px;
+}
+
+.total-post{
+    padding: 1% 0;
+    padding-right: 1%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.posts-list{
+    list-style-type: none;
+    font-size: 1.1rem;
+    a{
+        float: right;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+#posts-list-container{
+    ul{
+        padding: 0;
+        .comments{
+            font-family: $source_sans_font;
+            padding-left: 3%;
+            p{
+                margin-top: 0;
+                border-radius: 5px;
+                background-color: white;
+            }
+        }
+    }
+}
+
+small{
+    font-family: $ubuntu_font;
+    font-weight: bold;
+}
+
+// dividing the homepage into two parts
+#home-container{
+    display: flex;
+    flex-direction: row;
+    #friends{
+        @extend h1;
+        border-left: 1px solid lightgray;
+        width: 50%;
+        padding-left: 5%;
+        a{
+            text-decoration: none;
+        }
+    }
+}
