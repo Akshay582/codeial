@@ -1,2 +1,3 @@
 # codeial
-I don't know, definitely private for now.
+
+A social-media website in Node, Express, EJS and MongoDB.
